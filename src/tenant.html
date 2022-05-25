@@ -1,0 +1,13 @@
+<import from="./dashboard.html"></import>
+<import from="./tenant-other.html"></import>
+
+<h2>Tenant ${tenant.name} <a load="../-" style="border: 1px solid black;">X</a></h2>
+<div>Id: ${tenant.id}</div>
+<div>Name: ${tenant.name}</div>
+
+<div style="margin: 20px 0;">
+  <a load="dashboard">Dashboard</a>
+  <a load="tenant-other">Other details</a>
+</div>
+
+<au-viewport name="tenant-details" default="dashboard"></au-viewport>
