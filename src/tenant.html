@@ -1,5 +1,7 @@
-<import from="./dashboard.html"></import>
+<import from="./dashboard.ts"></import>
 <import from="./tenant-other.html"></import>
+<div style="background-color: burlywood">
+
 
 <h2>Tenant ${tenant.name} <a load="../-" style="border: 1px solid black;">X</a></h2>
 <div>Id: ${tenant.id}</div>
@@ -10,4 +12,5 @@
   <a load="tenant-other">Other details</a>
 </div>
 
-<au-viewport name="tenant-details" default="dashboard"></au-viewport>
+<au-viewport name="tenant-details" ></au-viewport>
+</div>

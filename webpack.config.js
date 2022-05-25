@@ -44,7 +44,6 @@ module.exports = function(env, { analyze }) {
           'plugin-conventions',
           'route-recognizer',
           'router',
-          'router-lite',
           'runtime',
           'runtime-html',
           'testing',

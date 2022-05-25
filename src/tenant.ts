@@ -15,5 +15,4 @@ export class Tenant {
     this.tenant = (await this.store.getTenants())[0];
     instruction.parameters.set({ id: this.tenant.id });
   }
-
 }

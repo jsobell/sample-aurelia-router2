@@ -1,7 +1,8 @@
 <import from="./tenant.ts"></import>
-
+<div style="background-color: antiquewhite">
 <h2>Tenants</h2>
 <a load="tenant" style="display: block;">Default tenant</a>
 <a repeat.for="tenant of tenants" load="tenant(${tenant.id})" style="display: block;">${tenant.name}</a>
 
 <au-viewport name="tenant" default="tenant" fallback="tenant"></au-viewport>
+</div>
