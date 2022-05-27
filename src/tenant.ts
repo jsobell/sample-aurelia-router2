@@ -1,6 +1,7 @@
 import { Store } from "./store";
+import {IRouteViewModel} from "aurelia";
 
-export class Tenant {
+export class Tenant implements IRouteViewModel {
   public static parameters = ['id'];
 
   public tenant;

@@ -1,17 +1,4 @@
-<import from="./tenants.ts"></import>
-<import from="./welcome-page.ts"></import>
-<import from="./about-page.ts"></import>
-<import from="./missing-page.ts"></import>
+<import from="./root.ts"></import>
 <import from="./login-page.ts"></import>
-<div style="background-color: azure">
-
-<nav>
-  <a load="welcome-page">Welcome</a>
-  <a load="tenants">Tenants</a>
-  <a load="about-page">About</a>
-  <a load="login-page">Login</a>
-</nav>
-
-<au-viewport fallback="missing-page"></au-viewport>
-
-</div>
+<h3>My-App</h3>
+<au-viewport fallback="root" default="root"></au-viewport>

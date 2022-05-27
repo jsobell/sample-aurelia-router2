@@ -1,16 +1,18 @@
-import {LoginPage} from "./login-page";
-import {inject, IRouter} from "aurelia";
+import { inject } from "aurelia";
+import { IRouter } from '@aurelia/router';
 
 @inject(IRouter)
 export class AboutPage {
   constructor(private router:IRouter) {
   }
 
-  public bound() {
-    this.router.load('/login-page');
+//  public canLoad() {
+//    return "login-page";
+//  }
 
-    // return "login-page";
-    // return "login-page";
-    return true;
+
+  public bound() {
+    this.router.load('/root/login-page');
+    return false;
   }
 }
